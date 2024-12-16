@@ -1,3 +1,3 @@
-### Netflix
+### Fb Photo Storage System
 
-![Netflix](https://github.com/codewonkamentor/SystemDesign/blob/main/Netflix/NetFlix.png)
+![FbPhotoStorage.png](https://github.com/codewonkamentor/SystemDesign/blob/main/FbPhotoStorage/FbPhotoStorage.png)
