@@ -92,9 +92,9 @@ Tools for GeoCoding: GoogleMaps, AzureMaps
 1. Interpolation if exact match is not there
 
 ### Last mile async fan out delivery 
-1. Redis PubSub
-1. Redis Stream
-1. Aache Kafka
+1. Redis PubSub: Use Pub/Sub if you are building a live dashboard or chat  where losing a message isn't a disaster
+1. Redis Stream (Mini Kafka): if you need Consumer Groups and retention, but your total data volume fits in a few gigabytes of RAM
+1. Aache Kafka: Threat Protection pipeline for Microsoft where you need to store every event for forensic analysis and handle massive bursts of traffic.
 
 ### Streaming
 Use case: real-time counters, gaming leaderboards, or high-frequency trading.
