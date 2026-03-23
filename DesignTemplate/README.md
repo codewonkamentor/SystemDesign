@@ -60,6 +60,13 @@ Example use case: Payment system. Relational databases are used
 1. Oracle
 1. CockroachDB
 
+## Common Design Pattenr
+
+### Last mile async fan out delivery 
+1. Redis PubSub
+1. Redis Stream
+1. Aache Kafka
+
 ### Streaming
 Use case: real-time counters, gaming leaderboards, or high-frequency trading.
 1. Redis
