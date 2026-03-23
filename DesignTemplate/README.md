@@ -86,6 +86,11 @@ Example use case: Payment system. Relational databases are used
 
 ## Common Design Pattenr
 
+### GeoCoding : Converting address to Longitude and latitude
+Tools for GeoCoding: GoogleMaps, AzureMaps
+1. Use tools like Oracle Spatial or PostGIS
+1. Interpolation if exact match is not there
+
 ### Last mile async fan out delivery 
 1. Redis PubSub
 1. Redis Stream
