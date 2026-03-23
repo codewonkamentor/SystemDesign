@@ -73,6 +73,17 @@ Example use case: Payment system. Relational databases are used
 1. Oracle
 1. CockroachDB
 
+## Backend Database Selection
+
+| Category | Use Cases | Databases |
+|----------|----------|----------|
+| Time Series Database | CloudWatch monitoring, Ad click aggregation | InfluxDB (analytics, IoT)<br>Prometheus (cloud-native monitoring)<br>Elasticsearch (logs & tracing) |
+| Search (Text / Fuzzy Matching) | Google search, Twitter tweet search | Elasticsearch |
+| High-Volume Write Systems | Chat systems (WhatsApp, Facebook) | Cassandra<br>DynamoDB<br>Bigtable |
+| Geospatial Data | Location services, ride matching | Redis + H3 / S2<br>Redis + GeoHash<br>S2-based DBs: Bigtable, HBase, Spanner<br>H3-based DBs: ClickHouse, Elasticsearch/OpenSearch |
+| Graph Database | N-degree relationships (social graph) | Facebook TAO (MySQL + cache)<br>Neo4j<br>Amazon Neptune<br>Azure Cosmos DB (Gremlin API) |
+| Strong Consistency (ACID) | Payment systems, transactions | PostgreSQL<br>MySQL<br>Oracle<br>CockroachDB |
+
 ## Common Design Pattenr
 
 ### Last mile async fan out delivery 
