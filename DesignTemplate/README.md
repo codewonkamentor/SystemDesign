@@ -94,8 +94,13 @@ Tools for GeoCoding: GoogleMaps, AzureMaps
 ### Last mile async fan out delivery 
 1. Redis PubSub: Use Pub/Sub if you are building a live dashboard or chat  where losing a message isn't a disaster
 1. Redis Stream (Mini Kafka): if you need Consumer Groups and retention, but your total data volume fits in a few gigabytes of RAM
+    - Enable sync/async replication to secondary node for handling failure
+    - Enalble appendfsync everysec. This writes every command to disk once per second
 1. Aache Kafka: Threat Protection pipeline for Microsoft where you need to store every event for forensic analysis and handle massive bursts of traffic.
-
+    - acks=all: Guarantees data is on multiple disks before ACK.
+    - min.insync.replicas=2: Prevents writing "risky" data if cluster is degraded.
+    - use monitoring to practively get alerts when things start getting wrong. 
+    
 ### Streaming
 Use case: real-time counters, gaming leaderboards, or high-frequency trading.
 1. Redis
