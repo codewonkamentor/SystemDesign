@@ -54,11 +54,10 @@ Example use cases: Chat system like Whatsapp, Facebook
 1. Google Bigtable
 
 ### Geospatial data
-1. Redis with H3 index
-2. Redis with GeoHash
-3. REdis with S3 index
+1. Redis with Uber H3/ Google S2 index
+1. Redis with GeoHash
 1. Google S2 Based Databases: Google Bigtable / HBase, Google Spanner,
-2. H3 Based Databases: ClickHouse, Elasticsearch / OpenSearch
+1. H3 Based Databases: ClickHouse, Elasticsearch / OpenSearch
 
 ### Strong consistent with ACID props
 Example use case: Payment system. Relational databases are used
