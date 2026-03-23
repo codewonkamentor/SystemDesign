@@ -1,3 +1,4 @@
+## Calculation
 ### System Scale & Throughput Reference
 
 | Requests per Day | Requests/sec        | 2 KB (req+resp) | 4 KB (req+resp) |
@@ -32,3 +33,35 @@
 * **Peak Traffic Estimation:** Use a **2x multiplier** for headroom.
 * **Avg Payload Size:** Typical values: `2KB` / `4KB` / `1KB`.
 * **Total System Bandwidth:** $\text{RequestsPerSec} \times \text{Avg Payload size}$
+
+
+## BackendDatabase Selection
+
+### Timeseries use case choose Timeseries database
+Example use cases: Cloudwatch monitoring, Ad click aggregator
+1. Influx DB: General Purpose Analytics and IoT.
+1. Prothemus: Cloud-Native Monitoring
+1. ElasticSearch: Log-based time-series data and trace analytics
+   
+### High-volume text, partial matches, or "fuzzy" search
+Example use cases: Google Search for web pages for search query, Tweet search in twitter.
+1. ElasticSearch
+
+### High-volume write system
+Example use cases: Chat system like Whatsapp, Facebook
+1. Cassanda 
+1. Dyanmodb
+1. Google Bigtable
+
+### Strong consistent with ACID props
+Example use case: Payment system. Relational databases are used
+1. PostgreSQL
+1. MySQL
+1. Oracle
+1. CockroachDB
+
+### Streaming
+Use case: real-time counters, gaming leaderboards, or high-frequency trading.
+1. Redis
+1. Aerospike
+1. Apache Kafka
