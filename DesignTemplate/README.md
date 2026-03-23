@@ -72,3 +72,9 @@ Use case: real-time counters, gaming leaderboards, or high-frequency trading.
 1. Redis
 1. Aerospike
 1. Apache Kafka
+
+## Data storage layer Optimization 
+### Compression for chat/post data
+1. Binary Serialization,
+1. Dictionary Compression,
+1. Domain-Specific Encoding
