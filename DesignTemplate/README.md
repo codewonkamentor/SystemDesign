@@ -1,15 +1,5 @@
 ### System Scale & Throughput Reference
 
-| Requests per Day | Requests/sec | 2 KB (req+resp) | 4 KB (req+resp) |
-| :--- | :--- | :--- | :--- |
-| **100K**  | 1 | 2.31 KB/s | 4.63 KB/s |
-| **1M** | 10 | 23.15 KB/s | 46.30 KB/s |
-| **10M** | 100 | 231.48 KB/s | 462.96 KB/s |
-| **100M** | 1K | 2.26 MB/s | 4.52 MB/s |
-| **1B** | 10K | 22.61 MB/s | 45.23 MB/s |
-| **10B** | 100K | |  |
-| **100B** | 1M  | |  |
-
 | Requests per Day | Requests/sec        | 2 KB (req+resp) | 4 KB (req+resp) |
 |------------------|--------------------|------------------|------------------|
 | 100K (10^5)      | 1.16 (≈10^0)       | 2.31 KB/s        | 4.63 KB/s        |
@@ -19,6 +9,7 @@
 | 1B (10^9)        | 11.57K (≈10^4)     | 23.15 MB/s       | 46.30 MB/s       |
 | 10B (10^10)      | 115.74K (≈10^5)    | 231.48 MB/s      | 462.96 MB/s      |
 | 100B (10^11)     | 1.16M (≈10^6)      | 2.31 GB/s        | 4.63 GB/s        |
+
 
 **Unit Conversion:** `1 character = 1 byte = 8 bits`
 
