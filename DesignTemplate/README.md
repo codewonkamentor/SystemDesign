@@ -59,6 +59,13 @@ Example use cases: Chat system like Whatsapp, Facebook
 1. Google S2 Based Databases: Google Bigtable / HBase, Google Spanner,
 1. H3 Based Databases: ClickHouse, Elasticsearch / OpenSearch
 
+### Graph Database 
+Example use case: N Degree
+1. FaceBook TAO: MySQL DB master follow architecrture with multilayer caching.
+1. Neo4j: The industry leader; best for deep, complex traversals.
+1. Amazon Neptune: Fully managed, supports Gremlin and SPARQL.
+1. Azure Cosmos DB: Uses the Gremlin API; great if you're already in the Azure ecosystem.
+
 ### Strong consistent with ACID props
 Example use case: Payment system. Relational databases are used
 1. PostgreSQL
